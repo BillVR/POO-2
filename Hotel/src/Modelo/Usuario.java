@@ -11,13 +11,14 @@ package Modelo;
  */
 public class Usuario {
     
-    private int num_id, edad;
+    private int num_id, edad, identificacion;
     private String nombre;
 
-    public Usuario(int num_id, int edad, String nombre) {
+    public Usuario(int num_id, int edad, String nombre, int identificacion) {
         this.num_id = num_id;
         this.edad = edad;
         this.nombre = nombre;
+        this.identificacion = identificacion;
     }
 
     public int getNum_id() {
@@ -42,6 +43,14 @@ public class Usuario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(int identificacion) {
+        this.identificacion = identificacion;
     }
 
     @Override
